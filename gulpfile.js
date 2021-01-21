@@ -45,8 +45,7 @@ const paths = {
 function image_min() {
   const srcGlob = paths.sreDir + '/**/*.+(jpg|jpeg|png|gif)'; //** :アスタリスク2つで、配下のディレクトリ全て
   const dstGlob = paths.dstDir;
-  return
-  gulp.src( srcGlob )
+  return gulp.src( srcGlob )
     .pipe(changed( dstGlob ))
     .pipe(imagemin([
       imagemin.gifsicle({interlaced: true}),
