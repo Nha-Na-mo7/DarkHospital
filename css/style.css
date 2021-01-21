@@ -302,7 +302,6 @@ img {
   .p-modal__hide {
     display: none; }
   .p-modal__cover {
-    position: absolute;
     display: none;
     transition: .3s all;
     width: 100%;
@@ -558,11 +557,11 @@ img {
 
 .u-bgColor__leafgreen {
   background: #F3FBEB;
-  box-shadow: 0px 0px 5px 2px #ddd inset; }
+  box-shadow: 0 0 5px 2px #ddd inset; }
 
 .u-bgColor__corp {
   background: #8EEDCE;
-  box-shadow: 0px 0px 5px 2px #ddd inset; }
+  box-shadow: 0 0 5px 2px #ddd inset; }
 
 .u-space__margin-top-l {
   margin-top: 15px; }
