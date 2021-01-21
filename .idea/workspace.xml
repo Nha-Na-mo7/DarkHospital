@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3747cddf-cedc-4324-b46b-8dc9b82ee4f9" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +37,7 @@
       <workItem from="1611053951526" duration="281000" />
       <workItem from="1611203227123" duration="73000" />
       <workItem from="1611204029685" duration="744000" />
-      <workItem from="1611206009629" duration="2300000" />
+      <workItem from="1611206009629" duration="3104000" />
     </task>
     <servers />
   </component>

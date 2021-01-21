@@ -1,6 +1,6 @@
 <!--
 ======================
- レスポンシブデザインアウトプット(Bootstrapでは無い方)
+ レスポンシブデザインアウトプット(Bootstrap未使用)
 ======================
 -->
 <!DOCTYPE html>
@@ -184,7 +184,7 @@
               <img src="./src/images/covid-19.jpg" alt="" class="c-imageslide__image">
             </div>
             <div class="c-imageslide__foot">
-              <p>君の内臓を売りたい。</p>
+              <p>脳洗浄と血液クレンジングでたちまち健康に</p>
             </div>
           </div>
         </div>
@@ -212,11 +212,17 @@
     <div class="p-container__body">
       <form action="" class="p-form p-form-m">
         <h2 class="c-input__title">お名前</h2>
-        <input type="text" class="c-input c-input__size-l c-input__border-green js-form-input js-valid-name" placeholder="滞納 太郎">
+        <label>
+          <input type="text" class="c-input c-input__size-l c-input__border-green js-form-input js-valid-name" placeholder="入院 太郎">
+        </label>
         <h2 class="c-input__title">メールアドレス</h2>
-        <input type="email" class="c-input c-input__size-l c-input__border-green js-form-input js-valid-mail" placeholder="xxxxxx@yyy.mail">
+        <label>
+          <input type="email" class="c-input c-input__size-l c-input__border-green js-form-input js-valid-mail" placeholder="xxxxxx@yyy.mail">
+        </label>
         <h2 class="c-input__title">お問い合わせ内容</h2>
-        <textarea name="" class="c-input c-input__textarea-l c-input__border-green js-form-input js-valid-contact" placeholder="お問い合わせ内容"></textarea>
+        <label>
+          <textarea name="" class="c-input c-input__textarea-l c-input__border-green js-form-input js-valid-contact" placeholder="お問い合わせ内容"></textarea>
+        </label>
         <button class="c-btn c-btn__green c-btn__size-max js-form-valid-target" disabled>送信する</button>
       </form>
     </div>
