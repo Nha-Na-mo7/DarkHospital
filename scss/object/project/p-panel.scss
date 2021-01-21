@@ -1,0 +1,39 @@
+// ========
+// p-panel
+// ========
+.p-panel {
+  box-sizing: border-box;
+  position: relative;
+  transition: .5s;
+  border-radius: 5px;
+
+
+  &__group {
+    margin-right: -$space_l;
+    @include mq($breakpoint: md) {
+      margin-right: 0;
+      div:last-child {
+        margin-right: 0;
+      }
+    }
+    @include mq(){
+      margin-right: 0;
+    }
+    &-flex {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+  &__course {
+    width: calc(33% - #{$space-l});
+
+    margin-right: $space_l;
+    @include mq($breakpoint: md){
+    }
+    @include mq{
+      width: 90%;
+      margin: 0 auto $space_l auto;
+    }
+  }
+}

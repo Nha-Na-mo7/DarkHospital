@@ -1,0 +1,36 @@
+// ============
+// c-modal
+// ============
+.c-modal {
+  &__head, &__foot {
+    padding: $space_m;
+  }
+  &__head {
+    display: block;
+    text-align: center;
+    font-size: $font-size_xl;
+    font-family: $font-family_corp;
+  }
+  &__image {
+    display: block;
+    width: 80%;
+    margin: auto;
+  }
+  &__foot {
+    font-size: $font-size_l;
+    font-family: $font-family_corp;
+    @include mq(){
+      font-size: $font-size_m;
+    }
+  }
+
+  &__btn-area {
+    margin-top: $space_s;
+    margin-bottom: $space_s;
+    text-align: center;
+  }
+  &__active {
+    display: block;
+  }
+
+}

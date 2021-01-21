@@ -1,0 +1,27 @@
+// ==============
+//  c-imageslide
+// ==============
+.c-imageslide {
+  &__image {
+    width: 100%;
+    &-area {
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      height: 400px;
+      @include mq(){
+        height: auto;
+      }
+    }
+  }
+  &__foot {
+    width: 60%;
+    @include mq(){
+      width: 100%;
+    }
+    margin: $space_xl auto;
+    font-family: $font-family_corp;
+    font-size: $font-size_xl;
+    text-align: center;
+  }
+}

@@ -1,0 +1,33 @@
+// ==========
+// c-panel
+// ==========
+.c-panel {
+  &__bg-white {
+    background: #fff;
+  }
+  &__head, &__foot {
+    padding: $space_m;
+  }
+
+  &__head{
+    text-align: center;
+    font-size: $font-size_xl;
+    font-family: $font-family_corp;
+
+    &-title{
+
+    }
+  }
+  &__image {
+
+  }
+  &__foot {
+    height: 130px;
+    overflow-y: scroll;
+  }
+  &__btn-area {
+    margin-top: $space_s;
+    margin-bottom: $space_s;
+    text-align: center;
+  }
+}

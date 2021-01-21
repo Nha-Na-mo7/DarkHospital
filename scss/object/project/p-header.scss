@@ -1,0 +1,32 @@
+// ==========
+// p-header
+// ==========
+.p-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: .5s;
+  color: $font-color_default;
+  padding-left: $space_xl ;
+  padding-right: $space_xl ;
+  // ヒーローバナーより低い位置にある時、白色透明に変わる
+  &__float-active{
+    transition: .3s;
+    background: rgba(255, 255, 255, 0.85);
+  }
+
+  &__size-default {
+    height: 80px;
+    width: 100%;
+  }
+  // 薄くなるヘッダー
+  &__float-active {
+    transition: .3s;
+    background: rgba(255, 255, 255, 0.85);
+  }
+  &__logo {
+    font-family: $font-family_corp;
+    font-size: $font-size_xl;
+    font-weight: bold;
+  }
+}

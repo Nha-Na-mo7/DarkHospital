@@ -1,0 +1,19 @@
+.p-googlemap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  @include mq(){
+    left: 5%;
+    width: 90%;
+    height: 90%;
+  }
+  &__container {
+    position: relative;
+    padding-bottom: 56.25%; // アスペクト比16:9用
+    height: 0;
+    overflow: hidden;
+    text-align: center;
+  }
+}

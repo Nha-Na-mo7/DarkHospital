@@ -1,0 +1,35 @@
+// ========
+// utility
+// ========
+.u-space{
+  &__margin-top-l {
+    margin-top: $space_l;
+  }
+  &__margin-top-xl {
+    margin-top: $space_xl;
+  }
+  &__margin-top-3l {
+    margin-top: $space_3l;
+  }
+
+  &__margin-bottom-l {
+    margin-bottom: $space_l;
+  }
+  &__margin-bottom-xl {
+    margin-bottom: $space_xl;
+  }
+  &__margin-bottom-3l {
+    margin-bottom: $space_3l;
+  }
+
+  &__pd {
+    padding: $space_s $space_s;
+  }
+}
+
+
+.u-overflow {
+  &__hidden {
+    overflow: hidden;
+  }
+}

@@ -1,0 +1,12 @@
+// ========
+// p-form
+// ========
+.p-form {
+  &-m {
+    width: 60%;
+    margin: auto;
+    @include mq() {
+      width: 90%;
+    }
+  }
+}

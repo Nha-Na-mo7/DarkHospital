@@ -1,0 +1,20 @@
+// ==============
+//  c-news
+// ==============
+.c-news {
+
+  &__date {
+    margin-right: $space_m;
+    font-family: $font-family_corp;
+    font-size: $font-size_l;
+    -webkit-font-smoothing: initial;
+    color: $font-color_date;
+    
+  }
+  &__link {
+
+  }
+  &__title {
+
+  }
+}

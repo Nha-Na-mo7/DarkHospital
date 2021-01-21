@@ -1,0 +1,71 @@
+// =========
+// c-btn
+// =========
+.c-btn {
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  transition: all .3s;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  &:hover {
+    transform: translateY(-3px);
+    transition: .3s all;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }
+  &__size-l {
+    padding: $space_l $space_xxl;
+    font-size: $font-size_l;
+    width: 90%;
+  }
+  &__size-max {
+    padding: $space_l $space_xxl;
+    font-size: $font-size_l;
+    width: 100%;
+  }
+
+  &__green {
+    color: $font-color_fff;
+    background: $color-corp-dark;
+    background: -webkit-linear-gradient(to bottom, $color-corp, $color-corp-dark); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, $color-corp, $color-corp-dark); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  }
+  &:disabled{
+    cursor: not-allowed;
+    background: $font-color_default;
+    background: -webkit-linear-gradient(to bottom, $font-color_default, $font-color_dark); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, $font-color_default, $font-color_dark); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: $font-color_default;
+  }
+}
+.c-slidebtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0.7;
+  font-size: $font-size_m;
+  font-family: $font-family_corp;
+  font-weight: bold;
+  text-align: center;
+  &__size-50 {
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+  }
+  &__bg-white{
+    background: $bg-color_leafgreen;
+    color: $font-color_default;
+  }
+  &__prev {
+    position: absolute;
+    margin-left: $space_l;
+    left: 0;
+  }
+  &__next {
+    position: absolute;
+    margin-right: $space_l;
+    right: 0;
+  }
+}

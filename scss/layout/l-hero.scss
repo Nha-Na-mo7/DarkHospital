@@ -1,0 +1,12 @@
+// ==============
+//  l-hero
+// ==============
+#l-hero {
+  background-image: url("../../src/images/hero.jpg");
+  background-attachment: fixed; // positionとは違う
+  background-position: center;
+  background-repeat: no-repeat;
+
+  width: 100%;
+  height: 700px;
+}

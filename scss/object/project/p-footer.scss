@@ -1,0 +1,54 @@
+// ===============
+// p-footer
+// ===============
+.p-footer {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: flex-start;
+
+
+  &__logo {
+    width: calc(100% / 12 * 5);
+    padding-left: $space_l;
+    @include mq(){
+      width: 100%;
+      text-align: center;
+      margin-bottom: $space_3l;
+    }
+    font-size: $font-size_xxl;
+    font-weight: bold;
+  }
+  &__list {
+    width: calc(100% / 12 * 3);
+    @include mq(){
+      width: 100%;
+      text-align: center;
+    }
+    &-ul {
+      font-size: $font-size_xl;
+      padding: $space_s $space_l;
+      margin-bottom: $space_3l;
+    }
+    &-li {
+      font-size: $font-size_m;
+      font-weight: normal;
+      padding-top: $space_m;
+      a {
+        color: $font-color_fff;
+        &:hover{
+          color: $color-corp;
+        }
+      }
+    }
+  }
+  &__copyright{
+    width: 100%;
+    text-align: center;
+    font-size: $font-size_l;
+    @include mq() {
+      font-size: $font-size_s;
+    }
+  }
+
+}

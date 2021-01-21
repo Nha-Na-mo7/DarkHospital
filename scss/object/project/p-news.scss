@@ -1,0 +1,25 @@
+// ==============
+//  p-news
+// ==============
+.p-news {
+  border-radius: 5px;
+  border: .5px solid $font-color_sub1;
+  overflow-y: scroll;
+  width: 75%;
+  padding: $space_l $space_3l;
+  @include mq(){
+    width: 80%;
+    padding: $space_m $space_l;
+  }
+  height: 80px;
+  margin: 0 auto;
+  &__item {
+    margin-bottom: $space_s;
+  }
+  &__br {
+    display: none;
+    @include mq() {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "200507output_Responsive",
+  "version": "1.0.0",
+  "description": "output HTML-exAdvance",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "node-sass --include-path scss scss/style.scss css/style.css",
+    "watch-css": "nodemon -e scss -x \"yarn run build-css\""
+  },
+  "author": "Ryo",
+  "license": "UNLICENSED",
+  "private": false,
+  "devDependencies": {
+    "browserify": "^16.5.1",
+    "gulp": "^4.0.2",
+    "gulp-changed": "^4.0.2",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-sass": "^4.0.2",
+    "node-sass": "^4.14.1",
+    "nodemon": "^2.0.3"
+  }
+}

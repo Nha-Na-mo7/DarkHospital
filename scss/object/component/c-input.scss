@@ -1,0 +1,45 @@
+// ========
+// c-input
+// ========
+.c-input {
+  font-size: $font-size_l;
+  color: $font-color_default;
+  border-radius: 5px;
+  box-sizing: border-box;
+  display: block;
+  height: 60px;
+  margin-bottom: $space_l;
+  @include mq(){
+    height: 40px;
+    font-size: $font-size_m;
+  }
+  outline: none;
+  &__border-green{
+    border: 2.5px solid #C4E8CE;
+  }
+  &__size-l{
+    width: 100%;
+    padding: $space_m $space_l;
+    @include mq() {
+      padding: $space_s $space_m;
+    };
+  }
+  &:focus {
+    border: 2.5px solid $color-corp-dark;
+  }
+  &__textarea-l {
+    padding: $space_m $space_l;
+    width: 100%;
+    height: 240px;
+    resize: none;
+    overflow-y: scroll;
+  }
+  &::placeholder {
+    color: $font-color_default;
+    opacity: 0.4;
+  }
+
+  &__title {
+    font-size: $font-size_l;
+  }
+}

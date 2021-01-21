@@ -1,0 +1,81 @@
+// =================
+// variable 変数まとめ
+// =================
+
+// -----------
+// font-color
+// -----------
+$font-color_default: #777;
+$font-color_dark: #111;
+$font-color_date: #7BE392; // TODO:わかりやすい名前に？
+$color-corp: #8EEDCE;
+$color-corp-dark: #50C49E;
+$font-color_sub1: #b6a480;
+$font-color_fff: #fff;
+$bg-color_leafgreen: #F7FCF9;
+$border-color_leafgreen: #F3FBEB;
+
+// -----------
+// siteWindow-width
+// -----------
+$site-width: 980px;  // いわゆるPCサイズ
+$site-width-md: 768px;  // iPadサイズ
+$site-width-sm: 414px;  // 大きめiPhoneのサイズ
+
+// -----------
+// pictures-height
+// -----------
+$pictures-height: 400px;  //
+$pictures-height-md: 768px;  //
+$pictures-height-sm: 240px;  //
+
+// -----------
+// font-size
+// -----------
+$font-size_s: 12px;
+$font-size_m: 14px;
+$font-size_default: 16px;
+$font-size_l: 18px;
+$font-size_xl: 24px;
+$font-size_xxl: 30px;
+$font-size_3l: 38px;
+
+// ------
+// space
+// ------
+$space_s: 5px;
+$space_m: 10px;
+$space_l: 15px;
+$space_xl: 20px;
+$space_xxl: 30px;
+$space_3l: 40px;
+
+
+// -----------
+// font-family
+// -----------
+$font-family_corp: 'Ruluko', sans-serif;;
+$font-family_sans: sans-serif;
+
+// -----------
+// breakpoint
+// -----------
+// メディアクエリのブレークポイント設定
+
+//@media screen and (max-width: 414px){
+//  .btn{
+//    font-size: .7em;
+//  }
+//}
+
+//$breakpoint-sm: 400px !default;
+//$breakpoint-md: 768px !default;
+//$breakpoint-lg: 1000px !default;
+
+$breakpoints: (
+  'sm': 'screen and (max-width: 414px)',
+  'md': 'screen and (min-width: 415px) and (max-width: 768px) ',
+  'min_md': 'screen and (min-width: 769px)',
+  'lg': 'screen and (max-width: 1000px)',
+  'xl': 'screen and (max-width: 1200px)',
+) !default;

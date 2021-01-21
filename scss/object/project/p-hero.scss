@@ -1,0 +1,43 @@
+// ==============
+//  p-hero
+// ==============
+.p-hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__title {
+    font-family: $font-family_corp;
+    font-size: $font-size_3l;
+    font-weight: bold;
+    @include mq(){
+      position: absolute;
+      top: 240px;
+      font-size: $font-size_l;
+    }
+    text-align: center;
+    &-color-default {
+      color: $font-color_default
+    }
+    &-color-dark {
+      color: $font-color_dark
+    }
+    &-color-fff {
+      color: $font-color_fff;
+    }
+    &-shadow-default {
+      text-shadow: $font-color_fff 0 4px 8px;
+    }
+  }
+  &__br {
+    &-mq {
+      display: none;
+      @include mq($breakpoint: md){
+        display: block;
+      }
+      @include mq(){
+        display: block;
+      }
+    }
+  }
+}

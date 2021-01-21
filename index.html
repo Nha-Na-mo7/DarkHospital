@@ -1,0 +1,261 @@
+<!--
+======================
+ レスポンシブデザインアウトプット(Bootstrapでは無い方)
+======================
+-->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>レスポンシブ・アウトプット</title>
+  <link href="https://fonts.googleapis.com/css2?family=Ruluko&display=swap" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="./dest/css/style.css">
+</head>
+<!-- header -->
+<header id="l-header" class="p-header p-header__size-default js-float-menu">
+  <h1 class="p-header__logo">Dark-Hospital</h1>
+  <!-- ハンバーガー -->
+  <div class="c-menu__trigger js-toggle-sp-menu">
+    <span class="c-menu__trigger-menu"></span>
+    <span class="c-menu__trigger-menu"></span>
+    <span class="c-menu__trigger-menu"></span>
+  </div>
+
+  <!-- ナビバー -->
+  <nav class="p-nav-menu p-nav-menu__white js-toggle-sp-menu-target">
+    <ul class="c-menu">
+      <li class="c-menu__item"><a href="" class="c-menu__link">TOP</a></li>
+      <li class="c-menu__item js-hide-sp-menu"><a href="#information" class="c-menu__link">INFORMATION</a></li>
+      <li class="c-menu__item js-hide-sp-menu"><a href="#service" class="c-menu__link">SERVICE</a></li>
+      <li class="c-menu__item js-hide-sp-menu"><a href="#image" class="c-menu__link">IMAGE</a></li>
+      <li class="c-menu__item js-hide-sp-menu"><a href="#access" class="c-menu__link">ACCESS</a></li>
+      <li class="c-menu__item js-hide-sp-menu"><a href="#contact" class="c-menu__link">CONTACT</a></li>
+    </ul>
+  </nav>
+</header>
+
+<body>
+<!-- hero -->
+<div id="l-hero" class="p-hero js-float-menu-target">
+  <h2 class="p-hero__title p-hero__title-color-dark p-hero__title-shadow-default">手遅れになる、その前に。<br class="p-hero__br-mq">あなたの勇気がみんなを救う。<br>~ Let's have an inspection ~</h2>
+</div>
+<!-- news -->
+<section id="information">
+  <div class="p-container">
+    <h2 class="p-container__title">INFORMATION</h2>
+    <ul class="p-news u-bgColor__leafgreen">
+      <li class="p-news__item"><a href="" class="c-news__link"><span class="c-news__date">20XX.04.25</span><br class="p-news__br"><span class="c-news__title">人類××化ウイルスの精製に成功、長年の研究の成果がついに報われた。</span></a></li>
+      <li class="p-news__item"><a href="" class="c-news__link"><span class="c-news__date">20XX.05.08</span><br class="p-news__br"><span class="c-news__title">ウイルスの動物実験は想定を上回る成功。今後人体実験の準備を進める。</span></a></li>
+      <li class="p-news__item"><a href="" class="c-news__link"><span class="c-news__date">20XX.05.22</span><br class="p-news__br"><span class="c-news__title">研究所に何者かが進入。金品に被害はなかったが、ウイルスサンプルが持ち去られる。</span></a></li>
+    </ul>
+  </div>
+</section>
+
+<!-- SERVICE -->
+<section id="service" class="u-bgColor__leafgreen">
+  <div class="p-container">
+    <h2 class="p-container__title"><span>SERVICE</span></h2>
+    <div class="p-container__body u-space__margin-bottom-3l">
+      <p>新型コロナウイルス感染症の患者増加に伴い、国全体において緊急事態宣言が発令されています。1日ごとに確認されている感染者数自体は100人を超えない日も増え、ピークは脱してはいるもののまだ予断を許さないというべき状況です。</p>
+      <p>特に特定警戒都道府県を除いた34県については、5月末日付けでの緊急事態宣言解除も視野に入れた動きがあり、普段の日常を取り戻すための動きが始まりつつあります。</p>
+    </div>
+    <div class="p-panel__group p-panel__group-flex">
+      <div class="p-panel p-panel__course c-panel__bg-white">
+        <div class="c-panel__head"><span class="c-panel__head-title">法定検診</span></div>
+        <div class="c-panel__image"><img src="./src/images/medical.jpg" alt=""></div>
+        <div class="c-panel__foot">
+          <p>会社の健康診断に！お手頃価格、税抜き39,800円〜。最速で健康診断書を発送いたします。</p>
+        </div>
+        <div class="c-panel__btn-area">
+          <button class="c-btn c-btn__green c-btn__size-l js-show-modal">詳細はこちら</button>
+        </div>
+
+        <div class="p-modal__hide">
+          <div class="p-modal js-show-modal-target">
+            <div class="c-modal__head"><span class="c-modal__head-title">法定健康診断基本コース</span></div>
+            <div class="c-modal__image">
+              <img src="./src/images/medical.jpg" alt="">
+            </div>
+            <div class="c-modal__foot">
+              <p>およそ2時間の健診で、問診、尿検査、血液検査、心電図、胸部X線検査を行います。<br>
+                健康診断書の送付は健診終了後１週間以内の発送となります。
+                <br>
+                ※健診前日以降、一切の飲食禁止となります。
+              </p>
+            </div>
+            <div class="c-modal__btn-area"><button class="c-btn c-btn__green c-btn__size-l js-hide-modal">閉じる</button></div>
+          </div>
+        </div>
+      </div>
+      <div class="p-panel p-panel__course c-panel__bg-white">
+        <div class="c-panel__head"><span class="c-panel__head-title">禁煙外来</span></div>
+        <div class="c-panel__image"><img src="./src/images/woman-smoke.jpg" alt=""></div>
+        <div class="c-panel__foot">
+          <p>
+            タバコをやめたくてもやめられない方はこちら！辞めざるを得ない身体に改造します。
+          </p>
+        </div>
+        <div class="c-panel__btn-area">
+          <button class="c-btn c-btn__green c-btn__size-l js-show-modal">詳細はこちら</button>
+        </div>
+
+        <div class="p-modal__hide">
+          <div class="p-modal js-show-modal-target">
+            <div class="c-modal__head"><span class="c-modal__head-title">禁煙外来コース</span></div>
+            <div class="c-modal__image">
+              <img src="./src/images/woman-smoke.jpg" alt="">
+            </div>
+            <div class="c-modal__foot">
+              <p>
+                喫煙を止めたくても止められなくて困っている、という方に。
+                当医院の精鋭チームによる強化改造手術を施すことにより、術後すぐにタバコを断ち切る効果が期待されます。<br>
+                料金 : 50500円(+消費税)<br>
+                ※保険適用外の手術となります。
+              </p>
+            </div>
+            <div class="c-modal__btn-area"><button class="c-btn c-btn__green c-btn__size-l js-hide-modal">閉じる</button></div>
+        </div>
+        </div>
+      </div>
+      <div class="p-panel p-panel__course c-panel__bg-white">
+        <div class="c-panel__head"><span class="c-panel__head-title">PCR検査について</span></div>
+        <div class="c-panel__image"><img src="./src/images/covid-19.jpg" alt=""></div>
+        <div class="c-panel__foot">
+          <p>
+            PCR検査はあくまでも症状が重い方を対象に、感染者であることを確定させる検査です。無闇やたらに行うべき検査ではありません。
+          </p>
+        </div>
+        <div class="c-panel__btn-area">
+          <button class="c-btn c-btn__green c-btn__size-l js-show-modal">詳細はこちら</button>
+        </div>
+
+        <div class="p-modal__hide">
+          <div class="p-modal js-show-modal-target c-modal__active">
+            <div class="c-modal__head"><span class="c-modal__head-title">PCR検査について</span></div>
+            <div class="c-modal__image">
+              <img src="./src/images/covid-19.jpg" alt="">
+            </div>
+            <div class="c-modal__foot">
+              <p>当医院では、新型コロナウイルス感染症の感染確定のために行われるPCR検査の実施を慎重に行う指針を取っています。<br>
+                症状がない人が検査を受けて陰性と診断されていても、感染の疑いが晴れるわけではありません。<br>緊急性、症状が重い人を最優先として実施いたします。</p>
+              </div>
+              <div class="c-modal__btn-area"><button class="c-btn c-btn__green c-btn__size-l js-hide-modal">閉じる</button></div>
+            </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- スライダー -->
+<section id="image">
+  <div class="p-container">
+    <h2 class="p-container__title">IMAGE</h2>
+    <div class="p-container__body">
+
+      <div class="p-imageslide__group js-imageslide">
+        <div class="p-imageslide__area">
+          <div class="p-imageslide__item p-imageslide__active">
+            <div class="c-imageslide__image-area">
+              <span class="c-slidebtn c-slidebtn__size-50 c-slidebtn__bg-white c-slidebtn__prev js-slide-prev">＜</span>
+              <span class="c-slidebtn c-slidebtn__size-50 c-slidebtn__bg-white c-slidebtn__next js-slide-next">＞</span>
+              <img src="./src/images/medical.jpg" alt="" class="c-imageslide__image">
+            </div>
+            <div class="c-imageslide__foot">
+              <p>最高級の手術をあなたに。</p>
+            </div>
+          </div>
+          <div class="p-imageslide__item">
+            <div class="c-imageslide__image-area">
+              <span class="c-slidebtn c-slidebtn__size-50 c-slidebtn__bg-white c-slidebtn__prev js-slide-prev">＜</span>
+              <span class="c-slidebtn c-slidebtn__size-50 c-slidebtn__bg-white c-slidebtn__next js-slide-next">＞</span>
+              <img src="./src/images/woman-smoke.jpg" alt="" class="c-imageslide__image">
+            </div>
+            <div class="c-imageslide__foot">
+              <p>一人じゃない。</p>
+            </div>
+          </div>
+          <div class="p-imageslide__item">
+            <div class="c-imageslide__image-area">
+              <span class="c-slidebtn c-slidebtn__size-50 c-slidebtn__bg-white c-slidebtn__prev js-slide-prev">＜</span>
+              <span class="c-slidebtn c-slidebtn__size-50 c-slidebtn__bg-white c-slidebtn__next js-slide-next">＞</span>
+              <img src="./src/images/covid-19.jpg" alt="" class="c-imageslide__image">
+            </div>
+            <div class="c-imageslide__foot">
+              <p>君の内臓を売りたい。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ACCESS -->
+<section class="u-bgColor__leafgreen" id="access">
+  <div class="p-container">
+    <h2 class="p-container__title">ACCESS</h2>
+    <p>〒ABC-1234</p>
+    <p>XX県Y市ZZZ 4-13-666 第49樹海ビル</p>
+    <div class="p-container__body p-googlemap__container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d812.1695049225646!2d138.78336292730924!3d35.487509450354004!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601960eacac8b82f%3A0x2c7ac7a9a29e2318!2z57W25Ye244O75oim5oWE6L-35a6u772e5Y-O5a6555eF5qOffg!5e0!3m2!1sja!2sjp!4v1589233320336!5m2!1sja!2sjp" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" class="p-googlemap"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="p-container">
+    <h2 class="p-container__title">CONTACT</h2>
+    <div class="p-container__body">
+      <form action="" class="p-form p-form-m">
+        <h2 class="c-input__title">お名前</h2>
+        <input type="text" class="c-input c-input__size-l c-input__border-green js-form-input js-valid-name" placeholder="滞納 太郎">
+        <h2 class="c-input__title">メールアドレス</h2>
+        <input type="email" class="c-input c-input__size-l c-input__border-green js-form-input js-valid-mail" placeholder="xxxxxx@yyy.mail">
+        <h2 class="c-input__title">お問い合わせ内容</h2>
+        <textarea name="" class="c-input c-input__textarea-l c-input__border-green js-form-input js-valid-contact" placeholder="お問い合わせ内容"></textarea>
+        <button class="c-btn c-btn__green c-btn__size-max js-form-valid-target" disabled>送信する</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- footer -->
+<footer id="l-footer" class="u-space__margin-top-3l">
+  <div class="p-container">
+    <div class="p-container__body p-footer">
+      <h2 class="p-footer__logo">Dark-Hospital</h2>
+      <div class="p-footer__list">
+        <ul class="p-footer__list-ul">SNS
+          <li class="p-footer__list-li"><a href="">Twitter</a></li>
+          <li class="p-footer__list-li"><a href="">Facebook</a></li>
+          <li class="p-footer__list-li"><a href="">Instagram</a></li>
+        </ul>
+      </div>
+      <div class="p-footer__list">
+        <ul class="p-footer__list-ul">サポート情報
+          <li class="p-footer__list-li"><a href="">会社情報</a></li>
+          <li class="p-footer__list-li"><a href="">利用規約</a></li>
+          <li class="p-footer__list-li"><a href="">特定商取引法に基づく表示</a></li>
+          <li class="p-footer__list-li"><a href="">プライバシーポリシー</a></li>
+          <li class="p-footer__list-li"><a href="">採用案内</a></li>
+        </ul>
+      </div>
+      <div class="p-footer__copyright">
+        <p>Copyright © 2020 Dark Hospital</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<div class="p-modal__cover p-modal__cover--color-dark js-show-modal-cover"></div>
+<!-- JS -->
+<script
+  src="./js/jQuery-3.5.1.min.js">
+</script>
+<script src="./js/app.js"></script>
+
+</body>
+</html>
